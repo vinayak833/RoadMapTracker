@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadmap Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🚀 Roadmap Tracker</h1>
+
+    <div class="dashboard">
+        <div>Total Skills: <span id="total">0</span></div>
+        <div>Completed: <span id="completed">0</span></div>
+        <div>Remaining: <span id="remaining">0</span></div>
+    </div>
+
+    <div class="form">
+        <input type="text" id="skillInput"
+            placeholder="Enter Skill">
+
+        <select id="category">
+            <option>Frontend</option>
+            <option>Backend</option>
+            <option>DSA</option>
+            <option>DevOps</option>
+            <option>AI/ML</option>
+        </select>
+
+        <button onclick="addSkill()">
+            Add Skill
+        </button>
+    </div>
+
+    <div class="progress-container">
+        <div id="progressBar"></div>
+    </div>
+
+    <h3 id="progressText">0% Completed</h3>
+
+    <div id="skillList"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
